@@ -1,0 +1,288 @@
+<!--  偷代码? 键来!
+┌───┐   ┌───┬───┬───┬───┐ ┌───┬───┬───┬───┐ ┌───┬───┬───┬───┐ ┌───┬───┬───┐
+│Esc│   │ F1│ F2│ F3│ F4│ │ F5│ F6│ F7│ F8│ │ F9│F10│F11│F12│ │P/S│S L│P/B│  ┌┐    ┌┐    ┌┐
+└───┘   └───┴───┴───┴───┘ └───┴───┴───┴───┘ └───┴───┴───┴───┘ └───┴───┴───┘  └┘    └┘    └┘
+┌───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───┬───────┐ ┌───┬───┬───┐ ┌───┬───┬───┬───┐
+│~ `│! 1│@ 2│# 3│$ 4│% 5│^ 6│& 7│* 8│( 9│) 0│_ -│+ =│ BacSp │ │Ins│Hom│PUp│ │N L│ / │ * │ - │
+├───┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─────┤ ├───┼───┼───┤ ├───┼───┼───┼───┤
+│ Tab │ Q │ W │ E │ R │ T │ Y │ U │ I │ O │ P │{ [│} ]│ | \ │ │Del│End│PDn│ │ 7 │ 8 │ 9 │   │
+├─────┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴┬──┴─────┤ └───┴───┴───┘ ├───┼───┼───┤ + │
+│ Caps │ A │ S │ D │ F │ G │ H │ J │ K │ L │: ;│\" '│ Enter │               │ 4 │ 5 │ 6 │   │
+├──────┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴─┬─┴────────┤     ┌───┐     ├───┼───┼───┼───┤
+│ Shift  │ Z │ X │ C │ V │ B │ N │ M │< ,│> .│? /│  Shift   │     │ ↑ │     │ 1 │ 2 │ 3 │   │
+├─────┬──┴─┬─┴──┬┴───┴───┴───┴───┴───┴──┬┴───┼───┴┬────┬────┤ ┌───┼───┼───┐ ├───┴───┼───┤ E││
+│ Ctrl│    │Alt │         Space         │ Alt│    │    │Ctrl│ │ ← │ ↓ │ → │ │   0   │ . │←─┘│
+└─────┴────┴────┴───────────────────────┴────┴────┴────┴────┘ └───┴───┴───┘ └───────┴───┴───┘
+-->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+    <meta name="viewport" id="viewport" content="width=device-width, initial-scale=1">
+    <link rel="shortcut icon" type="image/x-icon" href="/images/favicon.png">
+    <title>白码明信片</title>
+    <meta name="description" content="幼稚鬼小窝，期待与更多的人相遇！">
+    <meta name="keywords" content="幼稚鬼 白码 白码出凉州 白码博客 yzg.life yzg  幼稚鬼博客 网络明信片 ">
+    <!--        <link rel="apple-touch-icon-precomposed" href="images/avatar.bab2b7d4.jpeg">-->
+    <link rel="stylesheet" type="text/css" href="css/h.9c69ed6c.css">
+    <link rel="stylesheet" type="text/css" href="css/nekotora.99cf6f8c.css">
+    <script async src="https://www.googletagmanager.com/gtag/js?id=UA-137340638-1"></script>
+    <script>function a() {
+        dataLayer.push(arguments)
+    }
+
+    window.dataLayer = window.dataLayer || [], a("js", new Date), a("config", "UA-137340638-1");</script>
+</head>
+<body>
+<nav>
+    <a href="/" class="active">明信片</a> <a class="clip"></a>
+    <a href="https://www.yzg.life/">起始页</a>
+    <a href="https://www.yzg.life/blog/">博客</a>
+    <a href="https://www.yzg.life/treasure/">小便利</a>
+    <!--        <a class="clip"></a> <a href="//xue.zxiyun.com">朝晞云计算</a>  -->
+</nav>
+
+<body onContextMenu="alert('看代码不如直接与作者交流吧,下面有联系方式喔'); return false"
+      NOOP="if (window.event != null && window.event.button == 2) alert ('Thanks...');">
+<body data-phone-cc-input="1">
+<body>
+<link href="css/toastr.css" rel="stylesheet">
+<link href="css/style.css" rel="stylesheet">
+<link href="css/toastr.min.css" rel="stylesheet">
+<script src="js/toastr.min.js"></script>
+<style>
+    .toast-bottom-center {
+        position: absolute;
+        left: 30px;
+        right: 10px;
+        top: 20px;
+    }
+</style>
+
+<div class="background">
+    <canvas id="startrack"></canvas>
+    <div class="cover"></div>
+</div>
+<div class="main">
+    <div class="ch intro">
+        <div class="container">
+            <div class="hello">
+                <h1 id="slogan">思考中...</h1>
+                <h2>
+                    <div class="circle"><span></span> <span></span>
+                        <span></span></div>
+                    幼稚鬼 | 白码 网络明信片
+                </h2>
+            </div>
+        </div>
+    </div>
+    <div class="ch about">
+        <div class="container">
+            <h2 class="chtitle">Who is <span>Naive</span>？</h2>
+            <div class="clear">
+                <!--                个人介绍-->
+                <div class="introduct">
+                    <img class="avatar" src="images/yzg.jpg">
+                    <P>初与君相识，犹如故人归。</p>
+                    <p style="padding-bottom:1em;">How lucky to meet you!</p>
+                    <p>你好，我喜欢自称以 幼稚鬼 <sup>白码</sup> ，21岁，学生，喜欢学习思考与发现小众的美好，正在尝试从事互联网产品/Web开发相关工作。</p>
+                    <p>希望能与你在寰球的繁星数据之中相遇！</p>
+                    <div class="chatbox">
+                        <div class="line loading"><span></span>
+                            <span></span> <span></span></div>
+                    </div>
+                </div>
+                <!--                技能点-->
+                <ul class="skill clear">
+                    <li><p>HTML5/CSS3</p>
+                        <div class="progress">
+                            <div style="width:44%;"></div>
+                            <span>制作网站程度的能力</span></div>
+                    </li>
+                    <li><p>JavaScript/Typescript</p>
+                        <div class="progress">
+                            <div style="width:40%;"></div>
+                            <span>使用现代轮子程度的能力</span>
+                        </div>
+                    </li>
+                    <li><p>PHP</p>
+                        <div class="progress">
+                            <div style="width:55%;"></div>
+                            <span>最好的语言程度的能力</span></div>
+                    </li>
+                    <li><p>满意设计</p>
+                        <div class="progress">
+                            <div style="width:65%;">
+                            </div>
+                            <span>让自己舒服程度的能力</span></div>
+                    </li>
+                    <li><p>SpringBoot</p>
+                        <div class="progress">
+                            <div style="width:20%;"></div>
+                            <span>坚强后盾的能力</span></div>
+                    </li>
+                    <li><p>Python</p>
+                        <div class="progress">
+                            <div style="width:33%;"></div>
+                            <span>爬取世界的魔力</span></div>
+                    </li>
+                    <li><p>Vue</p>
+                        <div class="progress">
+                            <div style="width:44%;"></div>
+                            <span>尤雨溪的接受程度</span></div>
+                    </li>
+                    <li><p>Sql</p>
+                        <div class="progress">
+                            <div style="width:20%;"></div>
+                            <span>比特繁星的操纵力</span></div>
+                    </li>
+                    <li><p>世界</p>
+                        <div class="progress">
+                            <div style="width:60%;"></div>
+                            <span>观测世界程度的能力</span></div>
+                    </li>
+                    <li><p>健忘</p>
+                        <div class="progress">
+                            <div style="width:90%;"></div>
+                            <span>哈哈哈哈哈哈</span></div>
+                    </li>
+                    <li><p>同化率</p>
+                        <div class="progress">
+                            <div style="width:12%;"></div>
+                            <span>和大众相同程度的能力</span></div>
+                    </li>
+                    <li><p>创新力</p>
+                        <div class="progress">
+                            <div style="width:66%;"></div>
+                            <span>不满已有现状而重构</span>
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <div class="find ch">
+        <div class="container links">
+            <h2 class="chtitle">鬼鬼出没的<span>地方</span></h2>
+            <div class="clear col-3">
+                <a href="https://www.yzg.life/blog/" target="_blank">
+                    <div class="item">
+                        <div class="bg" style="background-color:#28a9e0"></div>
+                        <div class="inner"><span>博客</span></div>
+                    </div>
+                </a>
+                <a href="https://www.yzg.life/" target="_blank">
+                    <div class="item">
+                        <div class="bg" style="background-color:#28a9e0"></div>
+                        <div class="inner"><span>简约起始页</span></div>
+                    </div>
+                </a>
+                <a href="https://www.yzg.life/treasure" target="_blank">
+                    <div class="item">
+                        <div class="bg" style="background-color:#28a9e0"></div>
+                        <div class="inner"><span>便利小功能</span></div>
+                    </div>
+                </a></div>
+            <div class="clear">
+                <a href="tencent://message/?uin=2297813468" target="_blank">
+                    <div class="item">
+                        <div class="bg" style="background-color:#28a9e0"></div>
+                        <div class="inner"><i class="icon-qq"></i>
+                            <span>QQ</span></div>
+                    </div>
+                </a>
+                <a href="mailto:nepenthic@163.com?subject=来自白码网络明信片" target="_blank">
+                    <div class="item">
+                        <div class="bg" style="background-color:#28a9e0"></div>
+                        <div class="inner"><i class="icon-mail"></i> <span>Mail</span></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="item">
+                        <div class="bg" style="background-color:#e6162d"></div>
+                        <div class="inner"><i class="icon-weibo"></i> <span>!微博</span></div>
+                    </div>
+                </a>
+                <a href="https://space.bilibili.com/294597340" target="_blank">
+                    <div class="item">
+                        <div class="bg" style="background-color:#f9a2a8"></div>
+                        <div class="inner"><i class="icon-bilibili"></i>
+                            <span>Bilibili</span></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="item">
+                        <div class="bg" style="background-color:#28a9e0"></div>
+                        <div class="inner"><i class="icon-twitter"></i> <span>!Twitter</span></div>
+                    </div>
+                </a>
+                <a href="/" target="_blank">
+                    <div class="item">
+                        <div class="bg" style="background-color:#0f88eb"></div>
+                        <div class="inner"><i class="icon-zhihu"></i>
+                            <span>知乎</span></div>
+                    </div>
+                </a>
+                <a href="#" target="_blank">
+                    <div class="item">
+                        <div class="bg" style="background-color:#f09199"></div>
+                        <div class="inner"><i class="icon-bookmark"></i> <span>!Bangumi</span></div>
+                    </div>
+                </a> <a href="https://music.163.com/#/user/home?id=134968139" target="_blank">
+                <div class="item">
+                    <div class="bg" style="background-color:#f12d35"></div>
+                    <div class="inner"><i class="icon-netease_music"></i>
+                        <span>网易云音乐</span></div>
+                </div>
+            </a>
+                <a href="https://github.com/Naive-Ghost" target="_blank">
+                    <div class="item">
+                        <div class="bg" style="background-color:#353535"></div>
+                        <div class="inner"><i class="icon-github"></i> <span>Github</span></div>
+                    </div>
+                </a>
+                <a href="https://www.instagram.com" target="_blank">
+                    <div class="item">
+                        <div class="bg" style="background-color:#b600ff"></div>
+                        <div class="inner"><i class="icon-instagram"></i> <span>!Instgram</span></div>
+                    </div>
+                </a></div>
+        </div>
+    </div>
+    <!--    友人帐-->
+    <div class="gate ch">
+        <div class="container links">
+            <h2 class="chtitle">鬼鬼的<span>邻居</span>们</h2>
+            <div class="clear">
+                <a href="http://wwfwl.top/music/" target="_blank">
+                    <div class="item">
+                        <div class="avatar"><img
+                                src="https://whitecode.oss-cn-qingdao.aliyuncs.com/yindaoye/img/icon-design.png"></div>
+                        <div class="inner"><h5>wwf</h5>
+                            <p>热恋男孩的音乐网</p></div>
+                    </div>
+                </a>
+            </div>
+        </div>
+        </a> </div>
+</div>
+</div>
+<div class="footer ch">
+    <div class="container"><h4>幼稚鬼的网上明信片</h4>
+        <p>感谢了解到这</p>
+        <p class="c"><a href="https://beian.miit.gov.cn/"><-- 2021-present by naive 🌸 赣ICP备2021003671号-2 --></a></p>
+    </div>
+</div>
+</div>
+<script src="js/page.3a0791a3.js"></script>
+<script type="text/javascript" src="js/stats.js" charset="UTF-8">
+</script>
+
+<audio autoplay>
+    <source src="https://whitecode.oss-cn-qingdao.aliyuncs.com/mp3/yuiko%20-%20tsuki-.mp3" type="audio/mpeg">
+</audio>
+
+</body>
+</html>
